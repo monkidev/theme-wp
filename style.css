@@ -1,0 +1,118 @@
+/*
+    Theme Name: Monkidev
+    Version: 1
+    Description: Tema padrão para o site monkidev.com
+    Author: Monkidev - Jorge Otávio
+    Author URI: https://monkidev.com.br
+  */
+
+@font-face {
+  font-family: "lato-regular";
+  src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: "lato-black";
+  src: url(fonts/Lato/Lato-Black.ttf);
+}
+
+#primary-menu .nav-link {
+  font-family: "lato-black";
+  color: black !important;
+}
+
+#primary-menu .menu-item + .menu-item {
+  margin-left: 20px;
+}
+
+#primary-menu .active {
+  text-shadow: rgb(0 126 167) 0px 0px 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-wrapper img {
+  max-width: 70.98px;
+}
+
+#topo {
+  min-height: calc(100vh - 100px);
+  position: relative;
+}
+
+#topo .title {
+  font-family: "lato-black";
+  font-size: 70px;
+  text-align: center;
+  line-height: 65px;
+}
+
+#topo .title span {
+  color: rgb(0, 126, 167);
+}
+
+#topo .subtitle {
+  font-family: "lato-regular";
+  font-size: 24px;
+  color: black !important;
+}
+
+#topo .contact-btn {
+  margin-top: 40px;
+  background-color: rgb(10, 9, 8);
+  color: white;
+  font-family: "lato-black";
+  font-size: 24px;
+  padding: 10px 80px;
+  border-radius: 10px;
+  border: none;
+}
+
+#topo .to-products {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  bottom: 10px;
+}
+
+#topo .to-products h1 {
+  margin-top: auto;
+  font-family: "lato-black";
+  font-size: 28px;
+}
+
+#topo .to-products .feather {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 900px) {
+  #primary-menu .menu-item + .menu-item {
+    margin-left: 0px;
+  }
+
+  #topo .title {
+    font-size: 40px;
+    line-height: 38px;
+    transform: translate(0px, -50px);
+  }
+
+  #topo .subtitle {
+    font-size: 18px;
+    transform: translate(0px, -50px);
+  }
+
+  #topo .contact-btn {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 15px 92px;
+    transform: translate(0px, -50px);
+    width: 100%;
+  }
+}
