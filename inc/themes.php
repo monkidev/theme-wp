@@ -17,9 +17,10 @@ function monkidev_theme_scripts()
     wp_enqueue_style('monkidev-bootstrap', get_template_directory_uri() . "/assets/css/bootstrap.min.css", array(), wp_get_theme()->get('Version'));
     wp_enqueue_style('monkidev-aos-style', get_template_directory_uri() . "/assets/aos/aos.css", array(), wp_get_theme()->get('Version'));
     wp_enqueue_style('monkidev-style', get_template_directory_uri() . "/style.css", array(), wp_get_theme()->get('Version'));
-
+    
     wp_enqueue_script('monkidev-script', get_template_directory_uri() . "/assets/js/bootstrap.min.js", array(), wp_get_theme()->get('Version'));
     wp_enqueue_script('monkidev-feather-script', get_template_directory_uri() . "/assets/js/feather.min.js", array(), wp_get_theme()->get('Version'));
+    wp_enqueue_script('monkidev-fontawesome-script', get_template_directory_uri() . "/assets/js/fontawesome.min.js", array(), wp_get_theme()->get('Version'));
     wp_enqueue_script('monkidev-aos-script', get_template_directory_uri() . "/assets/aos/aos.js", array(), wp_get_theme()->get('Version'));
     wp_enqueue_script('monkidev-script-2', get_template_directory_uri() . "/assets/js/after-scripts.js", array('jquery'), wp_get_theme()->get('Version'), true);
 }

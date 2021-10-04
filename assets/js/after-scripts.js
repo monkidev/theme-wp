@@ -1,8 +1,9 @@
 function startEffectBg() {
   const q = document.getElementById("animation");
   if (q) {
-    q.style.position = "fixed";
+    q.style.position = "absolute";
     q.style.zIndex = "0";
+    q.style.maxWidth = "100%";
     const s = window.screen;
     const w = (q.width = s.width);
     const h = (q.height = s.height);
@@ -26,10 +27,18 @@ function startEffectBg() {
   }
 }
 
+function changeWord() {
+  const words = ["conecta", "melhora", "move", "interliga"];
+
+  const element = document.getElementById("change-word");
+  element.innerText = words[Math.floor(Math.random() * words.length)];
+}
+
 function onloadPage() {
   startEffectBg();
   AOS.init();
   feather.replace();
+  setInterval(() => changeWord(), 3000);
 }
 
 window.onresize = onloadPage();
