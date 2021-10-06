@@ -47,8 +47,8 @@
                 <a href="https://chat.whatsapp.com/FnPPQmzXepgDFJer12SYD5" target="_blank" data-aos="fade-up" data-aos-duration="2000" class="contact-btn">
                     Faça tecnologia
                 </a>
-                <div data-aos-offset="-500" data-aos="fade-down" data-aos-duration="1500" class="to-products">
+                <a href="#sb_instagram" data-aos-offset="-500" data-aos="fade-down" data-aos-duration="1500" class="to-products">
                     <i data-feather="chevron-down"></i>
-                </div>
+                </a>
             </div>
         </header>

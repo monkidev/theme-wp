@@ -12,22 +12,40 @@
 
 <?php get_header() ?>
 
-<div class="container info" id='about'>
-    <div class="row align-items-center mt-5 mb-5">
-        <div data-aos-duration="1500" data-aos="fade-right" class="col-12 col-lg-6 text-center">
-            <img src="<?php echo get_template_directory_uri() ?>/images/info-pic.png" alt="">
+<?php
+
+$query = new WP_Query(['post_type' => 'page', 'pagename' => 'home']);
+if ($query->have_posts()) :
+    while ($query->have_posts()) :
+        $query->the_post();
+        $data = get_post_meta(get_the_ID());
+        $image = get_field('image');
+        $size = 'full';
+?>
+        <div class="container info" id='about'>
+            <div class="row align-items-center mt-5 mb-5">
+                <div data-aos-duration="2000" data-aos="fade-up" class="col-12 mt-5">
+                    <?php the_content() ?>
+                </div>
+                <div data-aos-duration="1500" data-aos="fade-right" class="col-12 col-lg-6 text-center">
+                    <img src="<?php echo $image['url'] ?>" alt="">
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <h1 data-aos-duration="1500" data-aos="fade-down"><?php echo $data['title'][0] ?></h1>
+                    <p data-aos-duration="1500" data-aos="fade-up">
+                        <?php echo $data['description'][0] ?>
+                    </p>
+                </div>
+
+            </div>
         </div>
-        <div class="col-12 col-lg-6 text-center text-lg-start">
-            <h1 data-aos-duration="1500" data-aos="fade-down">Um pouco sobre a Monkidev</h1>
-            <p data-aos-duration="1500" data-aos="fade-up">
-                Informar a necessidade e expandir os movimentos tecnológicos no nordeste
-                é o principal foco atualmente da monkidev.
-            </p>
-        </div>
-    </div>
-</div>
+
+    <?php endwhile; ?>
+<?php endif; ?>
+
 
 <?php
+
 $args_social_links = [
     [
         'name' => 'Discord',
