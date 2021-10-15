@@ -8,11 +8,8 @@
  * @subpackage Monkidev
  * @since Monkidev Monkidev 1.0
  */
-?>
 
-<?php get_header() ?>
-
-<?php
+get_header();
 
 $query = new WP_Query(['post_type' => 'page', 'pagename' => 'home']);
 if ($query->have_posts()) :
