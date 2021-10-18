@@ -184,8 +184,8 @@ get_header('contrate-nos');
             <p>
                 A qualidade de um site vai além da sua parte visual,
                 toda estruturação de código é de extrema importância
-                para que o site tenha uma boa experiência de uso e
-                aparecer no topo das pesquisas.
+                para que ele proporcione uma boa experiência de uso e
+                apareça no topo das pesquisas.
             </p>
         </div>
         <a class="cta-button" href="https://wa.me/558788589105" target="_blank">Solicitar site</a>
