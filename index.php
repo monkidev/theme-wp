@@ -19,8 +19,8 @@ if ($query->have_posts()) :
         $image = get_field('image');
         $size = 'full';
 ?>
-        <div class="container info" id='about'>
-            <div class="row align-items-center mt-5 mb-5">
+        <div class="container info py-5" id='about'>
+            <div class="row align-items-center">
                 <div data-aos-duration="2000" data-aos="fade-up" class="col-12 mt-5">
                     <?php the_content() ?>
                 </div>

@@ -15,7 +15,7 @@
             <nav id="primary-menu-container" class="menu-bottom primary-menu-container navbar navbar-expand-md">
                 <div class="container">
                     <div data-aos="fade-down" data-aos-duration="1500" class="logo-wrapper">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/monkidev.png" alt="Monkidev Startup">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/logo-text.png" alt="Monkidev Startup">
                     </div>
                     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
                         <i data-feather="menu"></i>

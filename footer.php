@@ -1,6 +1,6 @@
 </main>
 <footer>
-    <div class="container d-flex flex-wrap">
+    <div class="container d-flex flex-wrap align-items-center">
         <div class="col-12 col-lg-4 text-center text-lg-start">
             <img src="<?php echo get_template_directory_uri() ?>/images/logo-text-white.png" alt="Monkidev - Programação WEB">
         </div>

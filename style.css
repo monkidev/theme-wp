@@ -49,10 +49,6 @@ img {
   height: auto;
 }
 
-.logo-wrapper img {
-  max-width: 70.98px;
-}
-
 #topo {
   min-height: calc(100vh - 100px);
   position: relative;
