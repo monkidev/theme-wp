@@ -25,10 +25,10 @@ if ($query->have_posts()) :
                     <?php the_content() ?>
                 </div>
                 <div data-aos-duration="1500" data-aos="fade-right" class="col-12 col-lg-6 text-center">
-                    <img src="<?php echo $image['url'] ?>" alt="">
+                    <img src="<?php echo $image['url'] ?>" alt="Desenvolvimento Web">
                 </div>
                 <div class="col-12 col-lg-6 text-center text-lg-start">
-                    <h1 data-aos-duration="1500" data-aos="fade-down"><?php echo $data['title'][0] ?></h1>
+                    <h2 data-aos-duration="1500" data-aos="fade-down"><?php echo $data['title'][0] ?></h2>
                     <p data-aos-duration="1500" data-aos="fade-up">
                         <?php echo $data['description'][0] ?>
                     </p>
@@ -43,29 +43,29 @@ if ($query->have_posts()) :
 
 <?php
 
-$args_social_links = [
-    [
-        'name' => 'Discord',
-        'icon' => 'fab fa-discord',
-        'link' => 'https://discord.gg/TMQ5KzU'
-    ],
-    [
-        'name' => 'Whatsapp',
-        'icon' => 'fab fa-whatsapp',
-        'link' => 'https://chat.whatsapp.com/FnPPQmzXepgDFJer12SYD5'
-    ],
-    [
-        'name' => 'Telegram',
-        'icon' => 'fab fa-telegram',
-        'link' => 'https://t.me/joinchat/TvD4ikm5iINjMDcx'
-    ],
-    [
-        'name' => 'Instagram',
-        'icon' => 'fab fa-instagram',
-        'link' => 'https://instagram.com/monkidev'
-    ]
-];
-get_template_part('components/social-links', 'social-links', $args_social_links)
+// $args_social_links = [
+//     [
+//         'name' => 'Discord',
+//         'icon' => 'fab fa-discord',
+//         'link' => 'https://discord.gg/TMQ5KzU'
+//     ],
+//     [
+//         'name' => 'Whatsapp',
+//         'icon' => 'fab fa-whatsapp',
+//         'link' => 'https://chat.whatsapp.com/FnPPQmzXepgDFJer12SYD5'
+//     ],
+//     [
+//         'name' => 'Telegram',
+//         'icon' => 'fab fa-telegram',
+//         'link' => 'https://t.me/joinchat/TvD4ikm5iINjMDcx'
+//     ],
+//     [
+//         'name' => 'Instagram',
+//         'icon' => 'fab fa-instagram',
+//         'link' => 'https://instagram.com/monkidev'
+//     ]
+// ];
+// get_template_part('components/social-links', 'social-links', $args_social_links)
 ?>
 
 <?php get_footer() ?>

@@ -107,7 +107,7 @@ img {
   z-index: 2 !important;
 }
 
-.info h1 {
+.info h2 {
   font-size: 2.3rem;
   font-family: "lato-black";
 }
@@ -117,7 +117,7 @@ img {
   line-height: 1.8rem;
 }
 
-.social-links h1 {
+.social-links h2 {
   font-family: "lato-black";
   margin: 30px 0px;
   font-size: 1.8rem;
@@ -139,7 +139,7 @@ a.card-social {
   transition: background-color 0.9s;
 }
 
-a.card-social:hover{
+a.card-social:hover {
   color: var(--color-white);
   background-color: var(--color-primary);
 }
@@ -149,13 +149,38 @@ a.card-social:hover{
   margin-top: 0.5rem;
 }
 
-.copyright {
+footer {
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 0.2rem 0px;
 }
 
-@media screen and (max-width: 900px) {
+footer > .container {
+  padding: 5rem 0rem;
+}
+
+footer .menu-footer {
+  padding: 0px;
+  list-style: none;
+}
+
+footer .menu-footer a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+footer .menu-footer.menu-socials li + li {
+  margin-left: 1rem;
+}
+
+footer .menu-footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  padding: 0.5rem 0px;
+}
+
+@media screen and (max-width: 992px) {
   #primary-menu .menu-item + .menu-item {
     margin-left: 0px;
   }
@@ -179,10 +204,14 @@ a.card-social:hover{
     transform: translate(0px, -50px);
     width: 100%;
   }
+
+footer .menu-footer {
+  margin-top: 2rem;
+}
 }
 
-@media screen and (max-width: 767px) {
-  .info h1 {
+@media screen and (max-width: 768px) {
+  .info h2 {
     margin-top: 50px;
     font-size: 1.9rem;
   }

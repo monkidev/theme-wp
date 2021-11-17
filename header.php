@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php the_title(); ?></title>
     <?php wp_head(); ?>
+    <title><?php the_title(); ?></title>
 </head>
 
 <body>
-    <main>
         <canvas id="animation"></canvas>
         <header>
             <nav id="primary-menu-container" class="menu-bottom primary-menu-container navbar navbar-expand-md">
                 <div class="container">
                     <div data-aos="fade-down" data-aos-duration="1500" class="logo-wrapper">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/monkidev.png" alt="monkidev logo">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/monkidev.png" alt="Monkidev Startup">
                     </div>
                     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
                         <i data-feather="menu"></i>
@@ -37,10 +36,10 @@
                 </div>
             </nav>
             <div id="topo" class="container d-flex flex-column justify-content-center align-items-center">
-                <div class="title" data-aos="fade-right" data-aos-duration="1500">
+                <h1 class="title" data-aos="fade-right" data-aos-duration="1500">
                     A tecnologia <span id="change-word">move</span><br />
                     o mundo
-                </div>
+                    </h1>
                 <div data-aos="fade-left" data-aos-duration="1500" class="subtitle">
                     Steve Jobs, inventor e fundador da Apple.
                 </div>
@@ -52,3 +51,4 @@
                 </a>
             </div>
         </header>
+    <main>

@@ -1,7 +1,7 @@
 <div class="container social-links" id="social-links">
     <div class="row">
         <div data-aos-duration="1500" data-aos="fade-down" class="col-12 text-center">
-            <h1>Cola na comunidade!</h1>
+            <h2>Cola na comunidade!</h2>
         </div>
     </div>
     <div data-aos-duration="1500" data-aos="fade-up" class="row justify-content-center">
